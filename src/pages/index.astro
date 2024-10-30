@@ -1,12 +1,14 @@
 ---
+import data from '../data/theData.json';
+
 const clientName = 'Polytechnic Pros';
 
 const theCurrentYear = new Date();
 
-const user = {
-	name: 'Victor E. Eagle',
-	age: 100,
-};
+// const user = {
+// 	name: 'Victor E. Eagle',
+// 	age: 100,
+// };
 
 const emojiSet = ['🍔', '🌭', '🍟', '🍕'];
 ---
@@ -25,9 +27,9 @@ const emojiSet = ['🍔', '🌭', '🍟', '🍕'];
 
 		<h1>{clientName} {emojiSet[3]}</h1>
 
-		<p>The mascot is {user.name} and is {user.age} years old</p>
+		<p>The mascot is {data.name} and is {data.age} years old</p>
 
-		<p>{user.name} loves food. His favorites are:</p>
+		<p>{data.name} loves food. His favorites are:</p>
 
 		<ul>
 			{emojiSet.map((emoji) => (
